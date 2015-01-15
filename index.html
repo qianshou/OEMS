@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>Oems by qianshou</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Oems</h1>
+        <h2>Online Examination System</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/qianshou/OEMS/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/qianshou/OEMS/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/qianshou/OEMS" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a id="oems" class="anchor" href="#oems" aria-hidden="true"><span class="octicon octicon-link"></span></a>OEMS</h1>
+
+<p>Online Examination System</p>
+
+<p>帮学校做的一个在线答题系统，包含不定项选择题（多选、少选均不得分）和判断题，分成了两个版本。</p>
+
+<p>V1：考生边答题边计算和更新分数，将数据写入到数据库。</p>
+
+<p>V2：后台管理员统计计算分数，并写入考生数据表中。</p>
+
+<p>当考生人数比较多的时候，考生答题时更新分数就会不断向user表中写入数据，容易照成卡顿，且计算分数的操作比较复杂。
+后期进行了优化，考试结束之后，由管理员通过对数据库的查询计算得到每个考生的分数，并依此写到数据库中。</p>
+
+<p>该系统由BootStrap+PHP+Mysql编写而成，除了前端借助了框架之外，其他的都是自写的，算是自己做的第一个大项目，收获颇丰。</p>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
